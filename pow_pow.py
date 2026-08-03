@@ -58,21 +58,17 @@ def show_menu ():
                 print('Insira um número válido\n')
             
         except ValueError:
-            print("Insira um número inteiro\n")  
+            print("Insira um número inteiro\n")
 
-# mostra o status atual do player e o estado inicial do enemy. caso a dificuldade esteja no facil, mantém mostrando o status do enemy durante toda a partida #
-def show_status():                                                                                                                                           #
-                                                                                                                                                             #
-    s_cleaner()                                                                                                                                              #
-                                                                                                                                                             #
-    print("__________________________________________________________________")                                                                              #
-    print(f"| Vidas: {player['vidas']}            <-- Você | Inimigo -->            Vidas: {enemy['vidas']} |")                                              #
-    print("|----------------------------------------------------------------|")                                                                              #
-    print(f"| Balas no tambor: {player['atirar']}           |              Balas no tambor: {enemy['atirar']} |")                                            #
-    print(f"| Esquivas: {player['defender']}                  |                     Esquivas: {enemy['defender']} |")                                        #
-    print("|______________________________|_________________________________|")                                                                              #
-    print()                                                                                                                                                  #
-#------------------------------------------------------------------------------------------------------------------------------------------------------------#
+def show_status():
+    s_cleaner()
+    print("__________________________________________________________________")
+    print(f"| Vidas: {player['vidas']}            <-- Você | Inimigo -->            Vidas: {enemy['vidas']} |")
+    print("|----------------------------------------------------------------|")
+    print(f"| Balas no tambor: {player['atirar']}           |              Balas no tambor: {enemy['atirar']} |")
+    print(f"| Esquivas: {player['defender']}                  |                     Esquivas: {enemy['defender']} |")
+    print("|______________________________|_________________________________|")
+    print()
 
 
 def generate_machine_input():
@@ -231,7 +227,7 @@ def show_animation(player_input, machine_input):
         ' v  _  v                         ',
         '  _|_|_                          ',
         ' |_( )/                          ',
-        '   /\/                           ',
+        '   /\\/                           ',
         '  (\\                             ',
         '__/_\\____________________________',
     ]
@@ -268,10 +264,10 @@ def show_animation(player_input, machine_input):
         '     _                                                      _     ',
         '   _|_|_                                                  _|_|_   ',
         '    ( ) )                                                ( ( )    ',
-        '    /|\/                           ___                    \/|\    ',
-        '    \|                            /##\\\\                     | \   ',
-        '    / \                          |\\#@/#|                   / \    ',
-        '   /   \                          \\###/                   /   \   ',
+        '    /|\\/                           ___                    \\/|\\    ',
+        '    \\|                            /##\\\\                     | \\   ',
+        '    / \\                          |\\#@/#|                   / \\    ',
+        '   /   \\                          \\###/                   /   \\   ',
         '__________________________________________________________________',
     
     ]
@@ -282,10 +278,10 @@ def show_animation(player_input, machine_input):
         '     _                                                      _     ',
         '   _|_|_                                                  _|_|_   ',
         '    ( ) )                                                ( ( )    ',
-        '    /|\/                                                  \/|\    ',
-        '    \|                            ___                       | \   ',
-        '    / \                          /###\\                     / \    ',
-        '   /   \                        |#/@#\\|                   /   \   ',
+        '    /|\\/                                                  \\/|\\    ',
+        '    \\|                            ___                       | \\   ',
+        '    / \\                          /###\\                     / \\    ',
+        '   /   \\                        |#/@#\\|                   /   \\   ',
         '_________________________________\\\\##/____________________________',
     
     ]
@@ -296,10 +292,10 @@ def show_animation(player_input, machine_input):
         '     _                                                      _     ',
         '   _|_|_                                                  _|_|_   ',
         '    ( ) )                                                ( ( )    ',
-        '    /|\/                         ___                      \/|\    ',
-        '    \|                          /##\\\\                       | \   ',
-        '    / \                        |\\#@/#|                     / \    ',
-        '   /   \                        \\###/                     /   \   ',
+        '    /|\\/                         ___                      \\/|\\    ',
+        '    \\|                          /##\\\\                       | \\   ',
+        '    / \\                        |\\#@/#|                     / \\    ',
+        '   /   \\                        \\###/                     /   \\   ',
         '__________________________________________________________________',
     
     ]
@@ -407,6 +403,7 @@ def show_how_to_play():
     i = 1
     while True:
         s_cleaner()
+        voltar = 1
         print("====================== POW-POW: O JOGO ======================")
         print("|                                                           |")
         print("|  Você e a máquina são dois pistoleiros frente a frente,   |")
@@ -444,7 +441,7 @@ def show_how_to_play():
             return
         i += 1
 
-########################################################## loop principal do jogo ##########################################################
+################################## loop principal do jogo ##################################
 while True:
     s_cleaner()
     option = show_menu()
