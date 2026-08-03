@@ -42,5 +42,14 @@ Baixe o 'pow_pow.py' mais recente nas releases, e execute o arquivo.
 > Caso os "gráficos" do jogo não pareçam formar desenho nenhum, há três causas possíveis:
 >  - A largura da janela pode estar pequena demais.
 >  - A sua fonte ou o ambiente em que o arquivo está sendo executado pode não se dar bem com o design
->  - A sua interpretação artística de caracteres ASCII pode ser diferente da do designer do jogo
+>  - A sua interpretação artística de caracteres ASCII pode ser diferente da interpretação da direção de arte
 
+### Contribuições
+
+Encontrou um problema ou tem alguma sugestão? Fique à vontade para abrir uma Issue ou enviar um PR.
+
+🩴
+
+## Agradecimentos
+
+[Denilo P.](https://github.com/denilodev) - Game designer, Roteirista, Designer de narrativa, e muito mais!
